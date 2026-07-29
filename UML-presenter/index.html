@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einführung in UML</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Einführung in Unified Modeling Language (UML)</h1>
+        </div>
+        <img src="bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Zu den Unterseiten (Diagrammtypen)</h2>
+                <ul>
+                    <li><a href="klassendiagramm/index.html">Klassendiagramm</a></li>
+                    <li><a href="aktivitaetsdiagramm/index.html">Aktivitätsdiagramm</a></li>
+                    <li><a href="anwendungsfalldiagramm/index.html">Anwendungsfalldiagramm</a></li>
+                    <li><a href="zustandsdiagramm/index.html">Zustandsdiagramm</a></li>
+                    <li><a href="sequenzdiagramm/index.html">Sequenzdiagramm</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Zu den Abschnitten auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#kurze-einfuehrung-in-die-uml">Kurze Einführung in UML</a></li>
+                    <li><a href="#uml-in-der-ihk-pruefung">UML in der IHK-Prüfung</a></li>
+                    <li><a href="#ueberblick-diagrammtypen">Überblick Diagrammtypen</a></li>
+                    <li><a href="#ueberblick-notation">Überblick Notation</a></li>
+                    <li><a href="#tools-zur-erstellung">Tools zur Erstellung</a></li>
+                    <li><a href="#ressourcen">Ressourcen</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="kurze-einfuehrung-in-die-uml">Kurze Einführung in die UML</h2>
+
+                <h3>Definition</h3>
+                <p><abbr title="Unified Modeling Language">UML</abbr> ist eine <b>standardisierte grafische Sprache</b> zur Spezifikation, Visualisierung und Dokumentation von Software- und Systemarchitekturen.</p>
+
+                <h3>Verwendung</h3>
+                <ul>
+                    <li><b>Analyse und Design:</b> Abbildung von Anforderungen und Architektur</li>
+                    <li><b>Kommunikation:</b> Gemeinsame Sprache zwischen Stakeholdern</li>
+                    <li><b>Dokumentation:</b> Nachvollziehbare Projektdokumente</li>
+                </ul>
+
+                <h3>Praxisrelevanz</h3>
+                <ul>
+                    <li>Reduziert Missverständnisse im Team</li>
+                    <li>Beschleunigt Einarbeitung neuer Entwickler</li>
+                    <li>Erleichtert Wartung und Erweiterung bestehender Systeme</li>
+                </ul>
+
+                <h3>Historie</h3>
+                <ul>
+                    <li>Mitte 1990er Jahre: Konsolidierung mehrerer Modellierungsmethoden (Booch, OMT, OOSE)</li>
+                    <li>1997: Erste <abbr title="Unified Modeling Language">UML</abbr>-Version von der <abbr title="Object Management Group">OMG</abbr> verabschiedet</li>
+                    <li>Seitdem kontinuierliche Weiterentwicklung (aktuell <abbr title="Unified Modeling Language">UML</abbr> 2.x)</li>
+                </ul>
+                <figure>
+                    <img src="bilder/uml-history.png" alt="Historie der UML" class="content-image">
+                    <figcaption>Die Entwicklung der Unified Modeling Language über die Jahre.</figcaption>
+                </figure>
+
+
+                <h3>OOP-Bezug</h3>
+                <p><abbr title="Unified Modeling Language">UML</abbr> wurde primär für <b>objektorientierte Systeme</b> entworfen. Klassen, Objekte, Vererbung und Schnittstellen lassen sich direkt visualisieren.</p>
+
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="uml-in-der-ihk-pruefung">UML in der IHK-Prüfung</h2>
+                <p>In den IHK-Prüfungen für Fachinformatiker (Anwendungsentwicklung / Systemintegration) wird <abbr title="Unified Modeling Language">UML</abbr> regelmäßig als Werkzeug zur Planung und Visualisierung eingesetzt.</p>
+
+                <h3>AP1</h3>
+                <ul>
+                    <li><b>Ziel:</b> Verständnis für grundlegende Diagrammtypen und deren Erstellung</li>
+                    <li>Diagrammarten wie Klassendiagramme, Aktivitätsdiagramme oder Anwendungsfalldiagramme werden häufig verlangt.</li>
+                    <li>Fokus liegt auf <b>theoretischem Wissen</b>, <b>Diagrammverständnis</b> und <b>korrekter Notation</b>.</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+
+                <h3>AP2</h3>
+                <ul>
+                    <li>Häufig genutzte Diagrammtypen:
+                        <ul>
+                            <li><b>Anwendungsfalldiagramme</b></li>
+                            <li><b>Klassendiagramme</b></li>
+                            <li><b>Aktivitätsdiagramme</b></li>
+                            <li><b>Sequenzdiagramme</b></li>
+                            <li><b>Zustandsdiagramme</b></li>
+                        </ul>
+                    </li>
+                    <li>Sie dienen zur Darstellung:
+                        <ul>
+                            <li>von <b>Strukturen und Abläufen</b></li>
+                            <li>von <b>Systeminteraktionen</b></li>
+                            <li>zur <b>Visualisierung der Umsetzungsschritte</b></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+
+                <h3>Einsatz von UML-Diagrammen in der IHK-Dokumentation</h3>
+                <p><abbr title="Unified Modeling Language">UML</abbr>-Diagramme unterstützen eine <b>bessere Verständlichkeit</b> und wirken sich positiv auf folgende Bewertungskriterien aus:</p>
+                <ul>
+                    <li><i>Dokumentation der Lösung</i></li>
+                    <li><i>Nachvollziehbarkeit der technischen Umsetzung</i></li>
+                    <li><i>Visualisierung komplexer Zusammenhänge</i></li>
+                </ul>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Abschnitt der Projektdokumentation</th>
+                                <th>Empfohlene UML-Diagrammtypen</th>
+                                <th>Nutzen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Projektbeschreibung</b></td>
+                                <td>Anwendungsfalldiagramm</td>
+                                <td>Darstellung der Anforderungen aus Nutzersicht</td>
+                            </tr>
+                            <tr>
+                                <td><b>Analyse / Ist-Zustand</b></td>
+                                <td>Aktivitäts- oder Klassendiagramm</td>
+                                <td>Struktur und Abläufe im aktuellen System</td>
+                            </tr>
+                            <tr>
+                                <td><b>Technische Umsetzung / Planung</b></td>
+                                <td>Klassendiagramm, Sequenzdiagramm, Zustandsdiagramm</td>
+                                <td>Struktur, Interaktionen und Zustandsveränderungen</td>
+                            </tr>
+                            <tr>
+                                <td><b>Qualitätssicherung / Testszenarien</b></td>
+                                <td>Zustands- oder Aktivitätsdiagramm</td>
+                                <td>Dokumentation von Systemverhalten unter Testbedingungen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="ueberblick-diagrammtypen">Überblick der 14 Diagrammtypen</h2>
+                <figure>
+                    <img src="bilder/uml-hierarchie.png" alt="hierarchische Übersicht der Diagramme" class="content-image">
+                    <figcaption>Hierarchische Darstellung der 14 UML-Diagrammtypen.</figcaption>
+                </figure>
+
+                <div class="note">
+                    <b>Hinweis:</b>
+                    <ul>
+                        <li><i>Kursiv dargestellte Begriffe</i> dienen <b>nur der Organisation und Strukturierung</b> des Diagramms (z.&thinsp;B. „Interaktionsdiagramme“ oder „Strukturdiagramme“).</li>
+                        <li>Diese kursiven Begriffe sind keine offiziellen <abbr title="Unified Modeling Language">UML</abbr>-Diagrammtypen.</li>
+                        <li>Konkrete <abbr title="Unified Modeling Language">UML</abbr>-Diagrammtypen sind in normaler Schrift dargestellt.</li>
+                    </ul>
+                </div>
+
+                <h3>Tabelle zu den 5 IHK-relevanten Diagrammtypen</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Diagrammtyp</th>
+                                <th>Kurzbeschreibung</th>
+                                <th>Beispielgrafik</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="klassendiagramm/index.html">Klassendiagramm</a></td>
+                                <td>Statische Struktur: Klassen, Attribute, Methoden, Beziehungen</td>
+                                <td><a href="#" class="image-link" data-img-src="bilder/uml-klassendiagramm.png" data-img-alt="Beispiel Klassendiagramm">
+                                    <img src="bilder/uml-klassendiagramm.png" alt="Beispiel Klassendiagramm" class="table-thumbnail">
+                                </a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="aktivitaetsdiagramm/index.html">Aktivitätsdiagramm</a></td>
+                                <td>Ablauf von Aktionen und Workflows (ähnlich Flussdiagramm)</td>
+                                <td><a href="#" class="image-link" data-img-src="bilder/activity.png" data-img-alt="Beispiel Aktivitätsdiagramm">
+                                    <img src="bilder/activity.png" alt="Beispiel Aktivitätsdiagramm" class="table-thumbnail">
+                                </a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="anwendungsfalldiagramm/index.html">Anwendungsfalldiagramm</a></td>
+                                <td>Nutzer-System-Interaktionen, Anforderungen aus Nutzersicht</td>
+                                <td><a href="#" class="image-link" data-img-src="bilder/anwendungsfalldia.png" data-img-alt="Beispiel Anwendungsfalldiagramm">
+                                    <img src="bilder/anwendungsfalldia.png" alt="Beispiel Anwendungsfalldiagramm" class="table-thumbnail">
+                                </a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="zustandsdiagramm/index.html">Zustandsdiagramm</a></td>
+                                <td>Lebenszyklus eines Objekts: Zustände und Zustandsübergänge</td>
+                                <td><a href="#" class="image-link" data-img-src="bilder/uml-zustandsdiagramm.png" data-img-alt="Beispiel Zustandsdiagramm">
+                                    <img src="bilder/uml-zustandsdiagramm.png" alt="Beispiel Zustandsdiagramm" class="table-thumbnail">
+                                </a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="sequenzdiagramm/index.html">Sequenzdiagramm</a></td>
+                                <td>Zeitliche Abfolge von Nachrichten und Methodenaufrufen zwischen Objekten</td>
+                                <td><a href="#" class="image-link" data-img-src="bilder/sequence.png" data-img-alt="Beispiel Sequenzdiagramm">
+                                    <img src="bilder/sequence.png" alt="Beispiel Sequenzdiagramm" class="table-thumbnail">
+                                </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="ueberblick-notation">Überblick Notation</h2>
+                <figure>
+                    <a href="#" class="image-link " data-img-src="bilder/uml-notationsUebersicht.png" data-img-alt="Notationsübersicht">
+                        <img class="content-image" src="bilder/uml-notationsUebersicht.png" alt="Notationsübersicht">
+                    </a>
+
+                    <figcaption>Grundlegende Symbole und Elemente der UML-Notation.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="tools-zur-erstellung">Mögliche Tools zur Erstellung</h2>
+                <p>Sie können Diagramme auf verschiedene Arten umsetzen:</p>
+                <ul>
+                    <li><b>Papier und Stift</b> (dann digitalisieren, z.&thinsp;B. per Foto oder Scan)</li>
+                    <li><b>Dia</b> (kostenloses <abbr title="Unified Modeling Language">UML</abbr>-Tool - wird im LinkedIn-Learning-Kurs verwendet)</li>
+                    <li><b>Excalidraw</b></li>
+                    <li><b>draw.io</b></li>
+                    <li><b>Lucidchart</b></li>
+                </ul>
+
+                <h3>Textbasierte Visualisierungstools</h3>
+                <ul>
+                    <li><b>PlantUML</b> (textbasierte <abbr title="Unified Modeling Language">UML</abbr>-Erstellung)</li>
+                    <li><b>mermaid</b> (integrierbar in <abbr title="Markdown">MD</abbr>)</li>
+                    <li><b>ASCII-Art</b> (für schnelle Entwürfe in Verbindung mit KI)</li>
+                   
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="ressourcen">Ressourcen</h2>
+                <ul>
+                    <li><b>PlantUML</b>
+                        <ul>
+                            <li><a href="https://oer-informatik.de/uml-aktivitaetsdiagramm-plantuml" target="_blank" rel="noopener noreferrer">Aktivitätsdiagramme mit PlantUML</a></li>
+                            <li><a href="https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700003" target="_blank" rel="noopener noreferrer">PlantUML-Server</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://de.wikipedia.org/wiki/Unified_Modeling_Language" target="_blank" rel="noopener noreferrer">Wikipedia: UML</a></li>
+                    <li><a href="https://www.omg.org/spec/UML/2.5.1/About-UML/" target="_blank" rel="noopener noreferrer">Offizielle UML-Spezifikation (<abbr title="Object Management Group">OMG</abbr>)</a></li>
+                    <li><b>LinkedIn Learning: Ralph Steyer</b>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/learning/uml-anwendungsfall-objekt-und-sequenzdiagramme/" target="_blank" rel="noopener noreferrer">Anwendungsfall-, Objekt- und Sequenzdiagramm</a></li>
+                            <li><a href="https://www.linkedin.com/learning/klassendiagramme-mit-uml" target="_blank" rel="noopener noreferrer">Klassendiagramm</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

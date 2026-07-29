@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwendungsfalldiagramm</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="../index.css"> </head>
+<body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="../bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Anwendungsfalldiagramm</h1>
+        </div>
+        <img src="../bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#zweck-und-verwendung">Zweck & Verwendung</a></li>
+                    <li><a href="#praxisrelevanz">Praxisrelevanz</a></li>
+                    <li><a href="#grundelemente">Grundelemente</a></li>
+                    <li><a href="#oop-bezug">OOP-Bezug</a></li>
+                    <li><a href="#links">Links</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zurück zur Übersicht</h2>
+                <ul>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="definition">Definition</h2>
+                <p>Ein Anwendungsfalldiagramm (Use-Case-Diagramm) stellt dar, welche Funktionen ein System aus Sicht der Nutzer (Akteure) bereitstellt.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="zweck-und-verwendung">Zweck & Verwendung</h2>
+                <ul>
+                    <li><b>Anforderungsanalyse</b>: Identifikation und Beschreibung von Systemfunktionen</li>
+                    <li><b>Kommunikation</b>: Gemeinsames Verständnis zwischen Fachbereich und Entwicklung</li>
+                    <li><b>Abgrenzung</b>: Klare Systemgrenze und Verantwortlichkeiten</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="praxisrelevanz">Praxisrelevanz</h2>
+                <ul>
+                    <li>Schnelle Erfassung der wichtigsten Use Cases</li>
+                    <li>Basis für User Stories und Testszenarien</li>
+                    <li>Übersichtliche Darstellung komplexer Systeme</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="grundelemente">Grundelemente</h2>
+                <ul>
+                    <li><b>Akteur</b>: Externe Entität (Person, System)</li>
+                    <li><b>Anwendungsfall</b>: Funktion oder Dienst, den das System für den Akteur bereitstellt</li>
+                    <li><b>Systemgrenze</b>: Rahmen, der das betrachtete System abgrenzt</li>
+                </ul>
+                <h3>Beispiel Grundelemente</h3>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/use_kaffeeautomat.png" data-img-alt="Beispiel Grundelemente Anwendungsfalldiagramm">
+                        <img src="bilder/use_kaffeeautomat.png" alt="Beispiel Grundelemente Anwendungsfalldiagramm" class="content-image">
+                    </a>
+                    <figcaption>Grundlegende Elemente eines Anwendungsfalldiagramms am Beispiel eines Kaffeeautomaten.</figcaption>
+                </figure>
+
+                <ul>
+                    <li><b>Beziehungen</b>:
+                        <ul>
+                            <li>Kommunikation (Linie Akteur ↔ Use Case)</li>
+                            <li>Include („&lt;include&gt;“): Wiederverwendbarer gemeinsamer Ablauf</li>
+                            <li>Extend („&lt;extend&gt;“): Optionaler Ablauf</li>
+                            <li>Generalisierung: Vererbung zwischen Use Cases oder Akteuren</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Beispiel Beziehungen</h3>
+                <p><i>Include</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/use_Geldautomat.png" data-img-alt="Beispiel Include-Beziehung">
+                        <img src="bilder/use_Geldautomat.png" alt="Beispiel Include-Beziehung" class="content-image">
+                    </a>
+                    <figcaption>Veranschaulichung der "Include"-Beziehung im Anwendungsfalldiagramm.</figcaption>
+                </figure>
+
+                <p><i>Extend</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/use_parkscheinautomat.png" data-img-alt="Beispiel Extend-Beziehung">
+                        <img src="bilder/use_parkscheinautomat.png" alt="Beispiel Extend-Beziehung" class="content-image">
+                    </a>
+                    <figcaption>Darstellung der "Extend"-Beziehung im Anwendungsfalldiagramm.</figcaption>
+                </figure>
+
+                <p><i>Generalisierung</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/use_lernplattform.png" data-img-alt="Beispiel Generalisierung im Anwendungsfalldiagramm">
+                        <img src="bilder/use_lernplattform.png" alt="Beispiel Generalisierung im Anwendungsfalldiagramm" class="content-image">
+                    </a>
+                    <figcaption>Beispiel einer Generalisierung zwischen Akteuren in einem Anwendungsfalldiagramm.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="oop-bezug">OOP-Bezug</h2>
+                <p>Use Cases bilden oft Methoden bzw. Services ab, die in Klassendiagrammen und Implementierung verarbeitet werden.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="links">Links</h2>
+                <ul>
+                    <li>Ralph Steyers Videos zum Anwendungsfalldiagramm
+                        <ul>
+                            <li><a href="https://www.linkedin.com/learning/uml-anwendungsfall-objekt-und-sequenzdiagramme/akteure" target="_blank" rel="noopener noreferrer">Akteure</a></li>
+                            <li><a href="https://www.linkedin.com/learning/uml-anwendungsfall-objekt-und-sequenzdiagramme/symbole-eines-anwendungsfalls" target="_blank" rel="noopener noreferrer">Symbole eines Anwendungsfalls</a></li>
+                            <li><a href="https://www.linkedin.com/learning/uml-anwendungsfall-objekt-und-sequenzdiagramme/beziehungen" target="_blank" rel="noopener noreferrer">Beziehungen</a></li>
+                            <li>... usw.</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://de.wikipedia.org/wiki/Anwendungsfalldiagramm" target="_blank" rel="noopener noreferrer">Wikipedia: Anwendungsfalldiagramm</a></li>
+                    <li><b>PlantUML</b>
+                        <ul>
+                            <li><a href="https://plantuml.com/de/use-case-diagram" target="_blank" rel="noopener noreferrer">plantuml.com (Use-Case-Diagramm)</a></li>
+                            <li><a href="https://oer-informatik.de/uml-usecase" target="_blank" rel="noopener noreferrer">oer-informatik (UML Use Case)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

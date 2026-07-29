@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klassendiagramm</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="../index.css"> </head>
+    <body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="../bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Klassendiagramm</h1>
+        </div>
+        <img src="../bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#zweck-und-verwendung">Zweck & Verwendung</a></li>
+                    <li><a href="#praxisrelevanz">Praxisrelevanz</a></li>
+                    <li><a href="#grundelemente">Grundelemente</a></li>
+                    <li><a href="#oop-bezug">OOP-Bezug</a></li>
+                    <li><a href="#tools-und-links">Tools & Links</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zurück zur Übersicht</h2>
+                <ul>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="definition">Definition</h2>
+                <p>Ein Klassendiagramm zeigt die statische Struktur eines Systems durch Klassen, deren Attribute, Methoden und die Beziehungen untereinander.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="zweck-und-verwendung">Zweck & Verwendung</h2>
+                <ul>
+                    <li><b>Modellierung der Domäne</b>: Abbildung von Geschäftsobjekten</li>
+                    <li><b>Architekturentwurf</b>: Festlegung von Klassenhierarchien und Schnittstellen</li>
+                    <li><b>Dokumentation</b>: Grundlage für Implementierung und Wartung</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="praxisrelevanz">Praxisrelevanz</h2>
+                <ul>
+                    <li>Klarheit über Systemstruktur und Verantwortlichkeiten</li>
+                    <li>Vermeidung von Redundanzen durch klare Beziehungen</li>
+                    <li>Unterstützt Code-Generierung und API-Design</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="grundelemente">Grundelemente</h2>
+                <ul>
+                    <li><b>Klasse</b>: Rechteck mit Namen, Attributen, Methoden</li>
+                    <li><b>Attribut</b>: Variable in einer Klasse (Sichtbarkeit + Name + Typ)</li>
+                    <li><b>Methode</b>: Operation in einer Klasse (Sichtbarkeit + Name + Parameter + Rückgabetyp)</li>
+                    <li><b>Sichtbarkeiten</b>: `+` public, `-` private, `#` protected, `~` package</li>
+                    <li><b>Beziehungen</b>:
+                        <ul>
+                            <li><b>Vererbung</b>: Pfeil mit offenem Dreieck</li>
+                            <li><b>Assoziation</b>: Linie zwischen Klassen</li>
+                            <li><b>Aggregation</b>: leeres Rautenende</li>
+                            <li><b>Komposition</b>: ausgefülltes Rautenende</li>
+                            <li><b>Abhängigkeit</b>: gestrichelte Linie mit Pfeil</li>
+                            <li><b>Realisierung</b>: gestrichelter Pfeil mit offenem Dreieck</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Beispiel <i>Klassensymbol</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/class_benutzer.png" data-img-alt="Beispiel Klassensymbol">
+                        <img src="bilder/class_benutzer.png" alt="Beispiel Klassensymbol" class="content-image">
+                    </a>
+                    <figcaption>Darstellung einer Klasse mit Attributen und Methoden.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Vererbung</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/class_rezepte.png" data-img-alt="Beispiel Vererbung">
+                        <img src="bilder/class_rezepte.png" alt="Beispiel Vererbung" class="content-image">
+                    </a>
+                    <figcaption>Veranschaulichung der Vererbungsbeziehung zwischen Klassen.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>(gerichtete) Assoziation</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/class_websiteCookies.png" data-img-alt="Beispiel gerichtete Assoziation">
+                        <img src="bilder/class_websiteCookies.png" alt="Beispiel gerichtete Assoziation" class="content-image">
+                    </a>
+                    <figcaption>Darstellung einer gerichteten Assoziation zwischen Klassen.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Aggregation</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/class_smartphoneSIM.png" data-img-alt="Beispiel Aggregation">
+                        <img src="bilder/class_smartphoneSIM.png" alt="Beispiel Aggregation" class="content-image">
+                    </a>
+                    <figcaption>Veranschaulichung der Aggregationsbeziehung.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Komposition</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/class_OrgaAbteilung.png" data-img-alt="Beispiel Komposition">
+                        <img src="bilder/class_OrgaAbteilung.png" alt="Beispiel Komposition" class="content-image">
+                    </a>
+                    <figcaption>Darstellung der Kompositionsbeziehung.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="oop-bezug">OOP-Bezug</h2>
+                <p>Klassendiagramme sind das Herzstück objektorientierter Analyse und dienen als Blaupause für Code in Sprachen wie Java oder C#.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="tools-und-links">Tools & Links</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/learning/klassendiagramme-mit-uml" target="_blank" rel="noopener noreferrer">Ralph Steyer: LinkedIn Learning: Klassendiagramm</a></li>
+                    <li><a href="https://de.wikipedia.org/wiki/Klassendiagramm" target="_blank" rel="noopener noreferrer">Wikipedia: Klassendiagramm</a></li>
+                    <li><a href="https://oer-informatik.de/uml-klassendiagramm" target="_blank" rel="noopener noreferrer">(kurzer) Einstieg in die OOP mit dem Klassendiagramm</a></li>
+                    <li><b>PlantUML</b>:
+                        <ul>
+                            <li><a href="https://plantuml.com/class-diagram" target="_blank" rel="noopener noreferrer">Klassendiagramm-Syntax</a></li>
+                        </ul>
+                    </li>
+                    <li><b>Mermaid</b>: <a href="https://mermaid.js.org/syntax/classDiagram.html" target="_blank" rel="noopener noreferrer">Markdown-integriert</a></li>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

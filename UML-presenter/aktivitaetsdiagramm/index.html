@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktivitätsdiagramm</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="../index.css"> </head>
+<body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="../bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Aktivitätsdiagramm</h1>
+        </div>
+        <img src="../bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#zweck-und-verwendung">Zweck & Verwendung</a></li>
+                    <li><a href="#praxisrelevanz">Praxisrelevanz</a></li>
+                    <li><a href="#grundelemente">Grundelemente</a></li>
+                    <li><a href="#oop-bezug">OOP-Bezug</a></li>
+                    <li><a href="#tools-und-links">Tools & Links</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zurück zur Übersicht</h2>
+                <ul>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="definition">Definition</h2>
+                <p>Ein Aktivitätsdiagramm visualisiert den Ablauf von Arbeits- oder Prozessschritten in einem System. Es zeigt Aktionen, Entscheidungen und Parallelitäten.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="zweck-und-verwendung">Zweck & Verwendung</h2>
+                <ul>
+                    <li><b>Prozessmodellierung</b>: Beschreibung von Workflows (z.&thinsp;B. Bestell- oder Freigabeprozesse)</li>
+                    <li><b>Analyse</b>: Erkennen von Engpässen und Optimierungspotenzial</li>
+                    <li><b>Dokumentation</b>: Klare Darstellung von Abläufen für Entwickler und Business</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="praxisrelevanz">Praxisrelevanz</h2>
+                <ul>
+                    <li>Schnelle Identifikation von Prozessschritten</li>
+                    <li>Verbesserte Kommunikation zwischen Fachbereich und IT</li>
+                    <li>Grundlage für Automatisierung und Testskripte</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="grundelemente">Grundelemente</h2>
+                <ul>
+                    <li><b>Startknoten</b>: Schwarzer Kreis</li>
+                    <li><b>Aktivität</b>: Abgerundetes Rechteck mit Bezeichnung</li>
+                    <li><b>Entscheidung</b>: Raute mit Bedingungen („[Bedingung]“)</li>
+                    <li><b>Zusammenführung</b>: Raute ohne Bedingung</li>
+                    <li><b>Endknoten</b>: Umrahmter schwarzer Kreis</li>
+                    <li><b>Kontrollfluss</b>: Pfeile zwischen Knoten</li>
+                </ul>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/act_einkauf.png" data-img-alt="Beispiel Grundelemente Aktivitätsdiagramm">
+                        <img src="bilder/act_einkauf.png" alt="Beispiel Grundelemente Aktivitätsdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Grundlegende Elemente eines Aktivitätsdiagramms am Beispiel eines Einkaufsprozesses.</figcaption>
+                </figure>
+                <h3>Unterschiedliche Elemente zum Flowchart</h3>
+                <ul>
+                    <li><b>Partitionen</b>: Schwimmbahnen (wer in einem Prozess welche Aufgaben übernimmt)</li>
+                </ul>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/act_Commit.png" data-img-alt="Beispiel Partitionen im Aktivitätsdiagramm">
+                        <img src="bilder/act_Commit.png" alt="Beispiel Partitionen im Aktivitätsdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Verwendung von Partitionen zur Darstellung von Verantwortlichkeiten.</figcaption>
+                </figure>
+                <ul>
+                    <li><b>Parallelität</b>: Balken („Fork“/„Join“)</li>
+                </ul>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/act_morgenroutine.png" data-img-alt="Beispiel Parallelität im Aktivitätsdiagramm">
+                        <img src="bilder/act_morgenroutine.png" alt="Beispiel Parallelität im Aktivitätsdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Darstellung paralleler Abläufe mit Fork- und Join-Elementen.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="oop-bezug">OOP-Bezug</h2>
+                <p>Aktivitätsdiagramme ergänzen Klassendiagramme, indem sie Objektverhalten und Methodenabläufe sichtbar machen.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="tools-und-links">Tools & Links</h2>
+                <ul>
+                    <li><a href="https://plantuml.com/de/activity-diagram-beta" target="_blank" rel="noopener noreferrer">PlantUML Aktivitätsdiagramm-Syntax</a></li>
+                    <li><a href="https://oer-informatik.de/uml-aktivitaetsdiagramm-plantuml" target="_blank" rel="noopener noreferrer">PlantUML - Blog (Aktivitätsdiagramm)</a></li>
+                    <li><a href="https://de.wikipedia.org/wiki/Aktivit%C3%A4tsdiagramm" target="_blank" rel="noopener noreferrer">Wikipedia-Artikel (Aktivitätsdiagramm)</a></li>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

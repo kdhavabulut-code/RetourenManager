@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequenzdiagramm</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="../index.css"> </head>
+<body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="../bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Sequenzdiagramm</h1>
+        </div>
+        <img src="../bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#zweck-und-verwendung">Zweck & Verwendung</a></li>
+                    <li><a href="#praxisrelevanz">Praxisrelevanz</a></li>
+                    <li><a href="#grundelemente">Grundelemente</a></li>
+                    <li><a href="#oop-bezug">OOP-Bezug</a></li>
+                    <li><a href="#tools-und-links">Tools & Links</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zurück zur Übersicht</h2>
+                <ul>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="definition">Definition</h2>
+                <p>Ein **Sequenzdiagramm** visualisiert die zeitliche Abfolge von Nachrichten (Methodenaufrufen) zwischen Objekten innerhalb eines Szenarios.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="zweck-und-verwendung">Zweck & Verwendung</h2>
+                <ul>
+                    <li><b>Verhaltensmodellierung</b>: Darstellung von Interaktionen in Use Cases oder Anwendungsfällen</li>
+                    <li><b>Design</b>: Festlegung von Kollaborationsabläufen zwischen Komponenten</li>
+                    <li><b>Dokumentation</b>: Nachvollziehbare Sequenz für Entwickler und Tester</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="praxisrelevanz">Praxisrelevanz</h2>
+                <ul>
+                    <li>Klare Sicht auf Kommunikationsfluss und zeitliche Abhängigkeiten</li>
+                    <li>Erkennung von Engpässen oder unübersichtlichen Abläufen</li>
+                    <li>Grundlage für Mocking und Test-Skripte</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="grundelemente">Grundelemente</h2>
+                <ul>
+                    <li><b>Lebenslinie</b>: Vertikal gestrichelte Linie unter einem Objekt- oder Rollen-Namen</li>
+                    <li><b>Aktivierungsbalken</b>: Rechter Winkel auf der Lebenslinie, zeigt Ausführungszeitraum</li>
+                    <li><b>Nachricht</b>: Pfeil von Sender zu Empfänger, beschriftet mit Methodenname und Parameter</li>
+                    <li><b>Synchron / Asynchron</b>: Voll/Pfeilspitze oder offen/Pfeilspitze</li>
+                    <li><b>Rückgabe</b>: Gegengerichteter gestrichelter Pfeil mit Rückgabewert</li>
+                    <li><b>Fragment (Optional)</b>: Bedingte/Schleifenbereiche mit Rahmen (alt, loop, opt)</li>
+                </ul>
+
+                <p>Beispiel <i>Grundsymbole</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/seq_anmeldung.png" data-img-alt="Beispiel Grundsymbole Sequenzdiagramm">
+                        <img src="bilder/seq_anmeldung.png" alt="Beispiel Grundsymbole Sequenzdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Die grundlegenden Symbole eines Sequenzdiagramms am Beispiel eines Anmeldeprozesses.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Opt-Fragment</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/seq_OptNewsleter.png" data-img-alt="Beispiel Opt-Fragment im Sequenzdiagramm">
+                        <img src="bilder/seq_OptNewsleter.png" alt="Beispiel Opt-Fragment im Sequenzdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Verwendung eines "Opt"-Fragments für optionale Abläufe, z.B. Newsletter-Anmeldung.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Alt-Fragment</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/seq_ALtLoginResult.png" data-img-alt="Beispiel Alt-Fragment im Sequenzdiagramm">
+                        <img src="bilder/seq_ALtLoginResult.png" alt="Beispiel Alt-Fragment im Sequenzdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Darstellung alternativer Abläufe mit einem "Alt"-Fragment, z.B. Login-Ergebnis.</figcaption>
+                </figure>
+
+                <p>Beispiel <i>Loop-Fragment</i></p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/seq_LoopUpload.png" data-img-alt="Beispiel Loop-Fragment im Sequenzdiagramm">
+                        <img src="bilder/seq_LoopUpload.png" alt="Beispiel Loop-Fragment im Sequenzdiagramm" class="content-image">
+                    </a>
+                    <figcaption>Ein "Loop"-Fragment zur Visualisierung von wiederholten Abläufen, wie einem Datei-Upload.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="oop-bezug">OOP-Bezug</h2>
+                <p>Sequenzdiagramme verdeutlichen, welche Methoden in welcher Reihenfolge auf Klassen und Objekte wirken und unterstützen so das API- und Interface-Design.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="tools-und-links">Tools & Links</h2>
+                <ul>
+                    <li><b>PlantUML</b>: <a href="https://plantuml.com/sequence-diagram" target="_blank" rel="noopener noreferrer">Sequenzdiagramm-Syntax</a></li>
+                    <li><b>Mermaid</b>: <a href="https://mermaid.js.org/syntax/sequenceDiagram.html" target="_blank" rel="noopener noreferrer">Markdown-integriert</a></li>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetourenManager</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📦 RetourenManager</h1>
+            <p>Verwalten Sie Ihre Retouren einfach und übersichtlich</p>
+        </header>
+
+<div class="dashboard">
+
+    <div class="stat-box">
+        <h3>Gesamt</h3>
+        <p id="gesamtAnzahl">0</p>
+    </div>
+
+
+    <div class="stat-box">
+        <h3>Offen</h3>
+        <p id="offenAnzahl">0</p>
+    </div>
+
+
+    <div class="stat-box">
+        <h3>Bearbeitet</h3>
+        <p id="bearbeitetAnzahl">0</p>
+    </div>
+
+
+    <div class="stat-box">
+        <h3>Erledigt</h3>
+        <p id="erledigtAnzahl">0</p>
+    </div>
+
+</div>
+
+        <div class="formular box">
+
+            <h2>Neue Retoure erfassen</h2>
+
+            <input type="text" id="bestellnummer" placeholder="Bestellnummer">
+
+            <input type="text" id="kundenname" placeholder="Kundenname">
+
+            <input type="text" id="produktname" placeholder="Produktname">
+
+            <input type="text" id="retourengrund" placeholder="Retourengrund">
+
+
+            <button id="speichernBtn">
+                Speichern
+            </button>
+
+        </div>
+
+
+
+        <div class="liste box">
+
+    <h2>Retourenliste</h2>
+
+
+    <input
+        type="text"
+        id="sucheInput"
+        placeholder="🔍 Kunde oder Bestellnummer suchen..."
+    >
+
+
+    <div id="retourenListe"></div>
+
+
+</div>
+
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

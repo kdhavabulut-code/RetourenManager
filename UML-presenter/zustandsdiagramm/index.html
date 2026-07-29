@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zustandsdiagramm</title>
+    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="../index.css"> </head>
+<body id="top">
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="../bilder/Logos/LuG_Academy_Logo_4c.png" alt="LuG Academy Logo" class="header-logo">
+            <h1>Zustandsdiagramm</h1>
+        </div>
+        <img src="../bilder/uml-logo.png" alt="UML Logo" class="uml-main-logo">
+    </header>
+
+    <main class="page-layout">
+        <nav class="sidebar-nav" aria-label="Seiten-Navigation">
+            <section>
+                <h2>Auf dieser Seite</h2>
+                <ul>
+                    <li><a href="#definition">Definition</a></li>
+                    <li><a href="#zweck-und-verwendung">Zweck & Verwendung</a></li>
+                    <li><a href="#praxisrelevanz">Praxisrelevanz</a></li>
+                    <li><a href="#grundelemente">Grundelemente</a></li>
+                    <li><a href="#oop-bezug">OOP-Bezug</a></li>
+                    <li><a href="#tools-und-links">Tools & Links</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Zurück zur Übersicht</h2>
+                <ul>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+            </section>
+        </nav>
+
+        <article class="main-content">
+            <section>
+                <h2 id="definition">Definition</h2>
+                <p>Ein **Zustandsdiagramm** (Statechart) beschreibt die Zustände eines Objekts und die Übergänge zwischen diesen Zuständen.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="zweck-und-verwendung">Zweck & Verwendung</h2>
+                <ul>
+                    <li><b>Verhaltensmodellierung</b>: Abbildung des Lebenszyklus von Objekten</li>
+                    <li><b>Analyse</b>: Erkennung gültiger und ungültiger Zustandswechsel</li>
+                    <li><b>Dokumentation</b>: Klarer Überblick über Zustandslogik für Entwickler und Tester</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="praxisrelevanz">Praxisrelevanz</h2>
+                <ul>
+                    <li>Vermeidung von unvorhergesehenen Zustandsfehlern</li>
+                    <li>Grundlage für ereignisgesteuerte Implementierungen</li>
+                    <li>Bessere Testabdeckung durch Zustandsübergangsdiagramme</li>
+                </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="grundelemente">Grundelemente</h2>
+                <ul>
+                    <li><b>Initialzustand</b>: Gefüllter Kreis</li>
+                    <li><b>Zustand</b>: Rechteck mit abgerundeten Ecken und Zustandsname</li>
+                    <li><b>Endzustand</b>: Gefüllter Kreis in Kreis</li>
+                    <li><b>Transition</b>: Pfeil mit Ereignis/Bedingung</li>
+                    <li><b>Guard-Bedingung</b>: `[Bedingung]` am Übergang</li>
+                    <li><b>Aktion</b>: `/Aktion()` am Übergang</li>
+                    <li><b>Composite States</b>: Hierarchische Zustände mit Sub-Zuständen</li>
+                    <li><b>Fork/Join</b>: Balken zur Parallelisierung und Synchronisation</li>
+                </ul>
+
+                <p>Beispiel: Musikplayer-Zustände</p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/stateMusikplayer.png" data-img-alt="Beispiel Zustandsdiagramm Musikplayer">
+                        <img src="bilder/stateMusikplayer.png" alt="Beispiel Zustandsdiagramm Musikplayer" class="content-image">
+                    </a>
+                    <figcaption>Die Zustände und Übergänge eines Musikplayers.</figcaption>
+                </figure>
+
+                <p>Beispiel mit Wächterausdrücken: Benutzerregistrierung mit Altersprüfung</p>
+                <figure>
+                    <a href="#" class="image-link" data-img-src="bilder/stateAlterspruefung.png" data-img-alt="Beispiel Zustandsdiagramm Altersprüfung">
+                        <img src="bilder/stateAlterspruefung.png" alt="Beispiel Zustandsdiagramm Altersprüfung" class="content-image">
+                    </a>
+                    <figcaption>Eine Benutzerregistrierung mit Altersprüfung unter Verwendung von Wächterausdrücken.</figcaption>
+                </figure>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="oop-bezug">OOP-Bezug</h2>
+                <p>Zustandsdiagramme verknüpfen sich mit Klassen, indem sie das Verhalten von Objekten je nach Attributen und Ereignissen strukturieren.</p>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+
+            <section>
+                <h2 id="tools-und-links">Tools & Links</h2>
+                <ul>
+                    <li><b>PlantUML</b>: <a href="https://plantuml.com/state-diagram" target="_blank" rel="noopener noreferrer">Statechart-Syntax</a></li>
+                    <li><b>Mermaid</b>: <a href="https://mermaid.js.org/syntax/stateDiagram.html" target="_blank" rel="noopener noreferrer">Markdown-integriert</a></li>
+                    <li><a href="../index.html">UML-Startseite</a></li> </ul>
+                <p class="go-to-top-link"><a href="#top">↑ Zurück nach oben</a></p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 – Interne Schulungsunterlagen</p>
+    </footer>
+
+    <dialog id="imageModal" class="image-modal">
+        <img src="" alt="" class="modal-image">
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageLinks = document.querySelectorAll('.image-link');
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = imageModal.querySelector('.modal-image');
+
+            imageLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Verhindert das Standardverhalten des Links
+                    const imgSrc = link.dataset.imgSrc;
+                    const imgAlt = link.dataset.imgAlt;
+
+                    modalImage.src = imgSrc;
+                    modalImage.alt = imgAlt;
+                    modalImage.style.display = "block"; // Stellt sicher, dass das Bild sichtbar ist
+                    imageModal.showModal(); // Zeigt das modale Fenster an
+                });
+            });
+
+            // Schließt das Modal, wenn außerhalb geklickt wird
+            imageModal.addEventListener('click', (event) => {
+                if (event.target === imageModal) {
+                    modalImage.style.display = "none"; // Versteckt das Bild, bevor das Modal geschlossen wird
+                    imageModal.close();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
